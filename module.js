@@ -88,7 +88,9 @@ postBtn.addEventListener("click" , function(){
   topic: topicInp.value,
   content: contentInp.value,
   timestamp: Date.now()
-  }}
+  }
+    push(blogRef , blogToPush)
+  }
 
-push(blogRef , blogToPush)
+
 })
