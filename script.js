@@ -12,7 +12,7 @@ let postLink = document.getElementById("post-link")
 //check username or agent id script
 if (username){
   landingPage.style.display = "none"
-  if (username === "PEACHBLOGSITEV1.0") {
+  if (username === "PEACHBLOGSITE") {
     isSiteAdmin = true
   }
 } else {
