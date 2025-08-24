@@ -78,7 +78,7 @@ postBtn.addEventListener("click" , function(){
   const topic = topicInp.value.trim()
 
   // check if ALL are empty
-  if (author === "" && date === "" && content === "" && topic === "") {
+  if (author === "" || date === "" || content === "" || topic === "") {
     alert("All fields are required")
     return
   } else {
