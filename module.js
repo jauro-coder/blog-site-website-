@@ -66,7 +66,7 @@ const dateInp = document.getElementById("date-inp")
 const contentInp = document.getElementById("post-inp")
 const topicInp = document.getElementById("topic-inp")
 let postBtn = document.getElementById("post-btn")
-
+const postSection = document.getElementById("post-section")
 
 
 postBtn.addEventListener("click" , function(){
@@ -90,6 +90,7 @@ postBtn.addEventListener("click" , function(){
   timestamp: Date.now()
   }
     push(blogRef , blogToPush)
+    postSection.style.display = "none"
   }
 
 
