@@ -70,12 +70,25 @@ let postBtn = document.getElementById("post-btn")
 
 
 postBtn.addEventListener("click" , function(){
+
+   // get trimmed values
+  const author = authorInp.value.trim()
+  const date = dateInp.value.trim()
+  const content = contentInp.value.trim()
+  const topic = topicInp.value.trim()
+
+  // check if ALL are empty
+  if (author === "" && date === "" && content === "" && topic === "") {
+    alert("All fields are required")
+    return
+  } else {
   let blogToPush = {
   author: authorInp.value,
   date: dateInp.value,
   topic: topicInp.value,
   content: contentInp.value,
   timestamp: Date.now()
-}
+  }}
+
 push(blogRef , blogToPush)
 })
