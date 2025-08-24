@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PEACH BLOG|HOME</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="landing-section">
+  <section id="landing-page">
+    <div id="welcome-bar">
+      <h1 id="bname">PEACH BLOG<span id="tm">™</span></h1>
+      <p id="welcome-note">
+        stay updated with the latest technology
+        <br>trends & news
+      </p>
+      <div id="peach">
+       <p>powered by <a href="#" class="link">peach inc.</a></p>
+    </div>
+    <!-- username inputs container -->
+    </div>
+    <div id="username-inp-cont">
+      <form id="username-form">
+        <fieldset id="fs">
+          <legend class="label">input username or agent ID</legend>
+          <input type="text" id="username-inp" name="username-inp" required>
+        </fieldset>
+          <br>
+        <button id="set-username-btn">CONTINUE ▶️</button>
+      </form>
+    </div>
+  </section>
+  </div>
+  <!--  home section -->
+  <div id="home-section">
+    <section id="home">
+        <header id="home-header">
+        <div id="logo-container">
+          PEACH BLOG<span id="tm">™</span>
+        </div>
+        <div id="navs">
+          <a href="#mainContent" id="home-link" class="nav-link">home</a>
+        <!--  <a href="/navs/about.html" id="about-link" class="nav-link">about</a>-->
+        </div>
+      </header>
+        <!-- post section -->
+      <div id="post-section">
+        <div id="post-bar">
+          <form id="post-form">
+            <input type="text" id="author-inp" placeholder="your name" required><br>
+            <input type="date" id="date-inp" placeholder="year/month/day" name="date" required><br>
+            <input type="text" id="topic-inp" placeholder="topic of the blog" required>
+            <br>
+            <textarea id="post-inp" placeholder="write your post..." required></textarea>
+            <br>
+            <button id="post-btn" class="button">post</button>
+          </form>
+        </div>
+      </div>
+         <!-- main content -->
+      <main id="mainContent">
+        <section id="blog-el">
+          <!-- set blog by js-->
+        </section>
+      </main>
+    </section>
+      <div id="admin-interface">
+              <!-- admin interface -->
+<a href="#" id="post-link">add<br>post</a>
+  </div>
+  </div>
+
+    <script src="module.js" type="module">
+    
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

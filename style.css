@@ -1,0 +1,244 @@
+@font-face {
+  font-family: nebula;
+  src: url(Nebula-Regular.otf );
+}
+#mainContent{
+  margin-top: 50px ;
+}
+#home-section{
+  display: block ;
+}
+#landing-section{
+  display: block  ;
+}
+#admin-interface{
+  display: none ;
+  position: fixed ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0;
+  padding: 0 0 50px 20px;
+}
+#post-section{
+  display: none ;
+}
+*{
+  margin: 0 ;
+  padding: 0 ;
+  overflow: 0 ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#home-header{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center ;
+  border-bottom: 1px solid gray;
+  padding: 5px ;
+  position: fixed ;
+  left: 0 ;
+  right: 0 ;
+  top: 0 ;
+}
+#logo-container{
+  font-size: 25px ;
+  color: #CE4726;
+  font-weight: bold ;
+  font-family: nebula;
+}
+.nav-link{
+  color: #fff;
+  background-color: #CE4726;
+  text-decoration: none ;
+  padding:5px ;
+  font-weight: bold ;
+  border-radius: 3px;
+}
+/*post bar style*/
+#post-form{
+  background: linear-gradient(#CE4726 , #EE813B);
+  text-align: center ;
+  display: 300px;
+  padding: 10px ;
+  border: 3px solid white;
+  border-radius:5px ;
+  
+}
+#post-inp{
+  border: none;
+  outline: none ;
+  background-color: white ;
+  color: black ;
+  height: 100px ;
+  width: 250px ;
+  padding: 10px ;
+  border-radius:5px ;
+  font-weight: bold ;
+}
+#post-btn{
+  width: 160px;
+  font-weight: bold ;
+  background-color: #CE4726;
+  border: none ;
+  color: #fff ;
+  padding: 5px 10px ;
+  border-radius: 5px ;
+  font-size: 20px ;
+  box-shadow: 0px 0px 2px white ;
+}
+#post-bar{
+  position: fixed ;
+  left: 0 ;
+  right: 0 ;
+  top: 0 ;
+  bottom: 0;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  background-color: rgba(0, 0, 0, 0.69);
+}
+#post-link{
+  width: 61px ;
+  height: 50px ;
+  background-color: #CE4726;
+  display: block ;
+  border-radius: 30px ;
+  color: #fff ;
+  text-decoration: none ;
+  text-align: center ;
+  font-weight: bold ;
+  padding-top: 11px ;
+  animation-name: zoom ;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 3px black ;
+}
+@keyframes zoom{
+
+0% { transform: scale(0.8); }
+
+17% { transform: scale(1); }
+34% { transform: scale(1.2); }
+51% { transform: scale(1.4); }
+68% { transform: scale(1.2); }
+85% { transform: scale(1); }
+100% { transform:scale(0.8); }
+}
+/* landing page style */
+#landing-page{
+  background: linear-gradient(#EE813B , #CE4726);
+  position: fixed ;
+  left: 0 ;
+  right: 0 ;
+  top: 0 ;
+  bottom: 0 ;
+  text-align: center ;
+}
+
+/* welcome bar style */
+#welcome-bar{
+  text-align: center ;
+  color: #fff ;
+  padding: 100px 0;
+}
+#bname{
+  font-family: nebula;
+  font-size: 40px ;
+  margin: 25px ;
+}
+#tm{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+#peach{
+  margin: 20px ;
+  font-weight: 350;
+}
+.link{
+  color: #fff ;
+  font-weight: bold ;
+}
+/* username bar style */
+.label{
+  color: #fff ;
+  font-size: 15px ;
+}
+#username-form{
+  text-align: center ;
+}
+#fs{
+  display:inline-block ;
+  height: 30px ;
+  width: 300px ;
+  border-radius: 5px ;
+  padding:0 5px 15px 5px ;
+  color: #CE4726;
+  border: 2px solid white ;
+}
+#username-inp{
+  width: 300px ;
+  height: 25px;
+  background-color: transparent ;
+  border: none ;
+  outline: none ;
+  font-size: 20px ;
+  color: #fff ;
+}
+#set-username-btn{
+  width:315px ;
+  height: 40px ;
+  margin-top: 10px ;
+  font-size: 20px ;
+  border: none ;
+  outline: none ;
+  border-radius: 5px ;
+  color: #CE4726;
+}
+#username-inp-cont , #welcome-bar{
+  display: inline-block ;
+}
+#date-inp , #author-inp , #topic-inp{
+  height: 20px ;
+  border: none;
+  border-radius: 3px ;
+  background-color: white ;
+  margin: 3px ;
+  padding: 10px ;
+  color: black ;
+  width: 250px ;
+}
+/*post style */
+#blg-img{
+  width: 40px ;
+  border: 2px solid #EE813B;
+  border-radius: 50px ;
+}
+#blog-info{
+  display: flex ;
+  align-items: center ;
+  justify-content: left;
+  margin-left: 5px ;
+}
+#blog{
+  margin: 5px ;
+  border-bottom: 1px solid #EE813B;
+}
+#blogger-name{
+  color: #EE813B;
+  font-weight: bolder ;
+}
+#date{
+  color: #000;
+  font-size: 15px ;
+}
+#name-date{
+  margin-left: 5px ;
+}
+#blog-content{
+  margin:5px ;
+}
+#topic{
+  color: #CE4726;
+  text-align: center ;
+  text-decoration: underline ;
+  font-weight: bold ;
+}
